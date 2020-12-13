@@ -1,0 +1,25 @@
+<div class="card w-50 m-auto">
+    <div class="card-header">
+        <h1>Registrar Cuenta</h1>
+    </div>
+    <div class="card-body">
+        <form (ngSubmit)="Registrar()">
+        <div class="form-group">
+            <input type="text" name="nombre" [(ngModel)]="user.nombre" class="form-control" placeholder="Name here..">
+        </div>
+            <div class="form-group">
+                <input type="text" name="apellido" [(ngModel)]="user.apellido" class="form-control" placeholder="Apellido here...">
+        </div>
+        <div class="form-group">
+                <input type="email" name="email" [(ngModel)]="user.email" class="form-control" placeholder="Email here...">
+        </div>
+        <div class="form-group">
+                <input type="password" name="password" [(ngModel)]="user.password" class="form-control" placeholder="Password here...">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <div class="text-center">
+        <a href="#" (click)="Login($event)">Login here</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="card w-50 m-auto">
+    <div class="card-header">
+        <h1>Iniciar Session</h1>
+    </div>
+    <div class="card-body">
+        <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+                <input type="email" name="email" [(ngModel)]="user.email" class="form-control" placeholder="Email here..">
+        </div>
+            <div class="form-group">
+                <input type="password" name="password" [(ngModel)]="user.password" class="form-control" placeholder="Password here...">
+        </div>
+        <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
+        <div class="text-center">
+        <a href="#" (click)="Register($event)">Register here</a>
+        </div>
+    </div>
+</div>
